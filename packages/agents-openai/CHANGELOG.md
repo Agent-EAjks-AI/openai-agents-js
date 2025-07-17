@@ -1,5 +1,16 @@
 # @openai/agents-openai
 
+## 0.0.12
+
+### Patch Changes
+
+- fe5fb97: Handle function call messages with empty content in Chat Completions
+- ad05c65: fix: if prompt is not specified return undefined - fixes #159
+- 046f8cc: Fix typos across repo
+- Updated dependencies [046f8cc]
+- Updated dependencies [ed66acf]
+  - @openai/agents-core@0.0.12
+
 ## 0.0.11
 
 ### Patch Changes

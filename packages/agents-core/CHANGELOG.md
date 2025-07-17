@@ -1,5 +1,12 @@
 # @openai/agents-core
 
+## 0.0.12
+
+### Patch Changes
+
+- 046f8cc: Fix typos across repo
+- ed66acf: Fixes handling of `agent_updated_stream_event` in run implementation and adds corresponding test coverage.
+
 ## 0.0.11
 
 ### Patch Changes
