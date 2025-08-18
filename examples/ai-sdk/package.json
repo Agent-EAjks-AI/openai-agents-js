@@ -2,14 +2,14 @@
   "private": true,
   "name": "ai-sdk",
   "dependencies": {
+    "@ai-sdk/openai": "^2.0.15",
     "@openai/agents": "workspace:*",
     "@openai/agents-extensions": "workspace:*",
-    "@ai-sdk/openai": "^1.1.3",
-    "zod": "^3.25.40"
+    "zod": "^3.25.76"
   },
   "scripts": {
     "build-check": "tsc --noEmit",
-    "start:sdk-model": "tsx ai-sdk-model.ts",
+    "start": "tsx index.ts",
     "start:stream": "tsx stream.ts"
   }
 }
