@@ -135,6 +135,9 @@ importers:
       '@ai-sdk/openai':
         specifier: ^2.0.15
         version: 2.0.15(zod@3.25.62)
+      '@openai/agents':
+        specifier: workspace:*
+        version: link:../../packages/agents
       '@openai/agents-extensions':
         specifier: workspace:*
         version: link:../../packages/agents-extensions
