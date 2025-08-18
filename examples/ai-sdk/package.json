@@ -3,9 +3,8 @@
   "name": "ai-sdk",
   "dependencies": {
     "@ai-sdk/openai": "^2.0.15",
-    "@openai/agents": "workspace:*",
     "@openai/agents-extensions": "workspace:*",
-    "zod": "^3.25.76"
+    "zod": "3.25.62"
   },
   "scripts": {
     "build-check": "tsc --noEmit",

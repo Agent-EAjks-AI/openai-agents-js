@@ -1,7 +1,6 @@
-import { aisdk } from '@openai/agents-extensions';
-import { z } from 'zod';
 import { Agent, run, tool } from '@openai/agents';
-import { AiSdkModel } from '@openai/agents-extensions';
+import { aisdk, AiSdkModel } from '@openai/agents-extensions';
+import { z } from 'zod';
 
 export async function runAgents(model: AiSdkModel) {
   const sleep = (ms: number) =>
