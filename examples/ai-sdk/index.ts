@@ -30,6 +30,7 @@ export async function runAgents(model: AiSdkModel) {
     instructions:
       'You are a helpful assistant. When you need to get the weather, you can hand off the task to the Weather Data Agent.',
     handoffs: [dataAgent],
+    model, // Using the AI SDK model for this agent
   });
 
   const result = await run(
@@ -39,12 +40,17 @@ export async function runAgents(model: AiSdkModel) {
   console.log(result.finalOutput);
 }
 
-import { openai } from '@ai-sdk/openai';
+import { createOpenRouter } from '@openrouter/ai-sdk-provider';
+// import { openai } from '@ai-sdk/openai';
 // import { anthropic } from '@ai-sdk/anthropic';
 // import { google } from '@ai-sdk/google';
 
 (async function () {
-  const model = aisdk(openai('gpt-4.1-nano'));
+  const openRouter = createOpenRouter({
+    apiKey: process.env.OPENROUTER_API_KEY,
+  });
+  const model = aisdk(openRouter('openai/gpt-oss-120b'));
+  // const model = aisdk(openai('gpt-4.1-nano'));
   // const model = aisdk(anthropic('claude-sonnet-4-20250514'));
   // const model = aisdk(google('gemini-2.5-flash'));
   await runAgents(model);
