@@ -1,5 +1,12 @@
 # @openai/agents-core
 
+## 0.4.2
+
+### Patch Changes
+
+- 605670e: test(realtime,core,extensions): add coverage for approvals, tracing, MCP, and codex helpers
+- 9d10652: fix(agents-core): prefer run tracing config when resuming run state
+
 ## 0.4.1
 
 ### Patch Changes

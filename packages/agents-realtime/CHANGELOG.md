@@ -1,5 +1,14 @@
 # @openai/agents-realtime
 
+## 0.4.2
+
+### Patch Changes
+
+- 605670e: test(realtime,core,extensions): add coverage for approvals, tracing, MCP, and codex helpers
+- Updated dependencies [605670e]
+- Updated dependencies [9d10652]
+  - @openai/agents-core@0.4.2
+
 ## 0.4.1
 
 ### Patch Changes
