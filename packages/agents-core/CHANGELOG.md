@@ -1,5 +1,14 @@
 # @openai/agents-core
 
+## 0.8.2
+
+### Patch Changes
+
+- 4b99d53: chore: format agents-core and agents-realtime sources
+- 8424092: fix: avoid reconnect barrier false positives in MCP retry test
+- 50edd08: fix: harden streamable HTTP reconnect test barriers
+- 1531038: fix: update default reasoning effort for newer models
+
 ## 0.8.1
 
 ### Patch Changes
